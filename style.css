@@ -641,6 +641,7 @@ body {
 .imgslide {
   width: 700px;
   height: 350px;
+  margin-right: 10%;
   margin-top: 20px;
   text-align: center;
   margin: auto;
