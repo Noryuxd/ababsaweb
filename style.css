@@ -655,7 +655,7 @@ body {
   display: flex;
   gap: 4%;
   margin-bottom: 40px;
-  margin-top: 2%;
+  margin-top: 10%;
   }
 
   @media screen and (max-width: 768px) {
