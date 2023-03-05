@@ -10,6 +10,18 @@ body {
     overflow-x: hidden;
 }
 
+.price {
+  font-size: 1.2em;
+  color: black;
+  font-weight: bold;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.info {
+  color: grey;
+  font-size: 17px;
+}
+
 .header{
     height: 80px;
     width: 100%;
@@ -216,6 +228,10 @@ body {
 
 .produit img{
     width: 100%;
+}
+
+.produit_img {
+  width: 300px;
 }
 
 .produit_name , .produit p , .produit button , .star{
@@ -859,9 +875,9 @@ body {
 }
 
 .produitxd{
-  width: 250px;
+  width: 300px;
   padding: 10px;
-  height: 20%;
+  height: 540px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   border-radius: 10px;
   display: flex;
@@ -872,13 +888,22 @@ body {
 }
 
 .produitxd:hover{
-  transform: scale(1.1);
   box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.6), 0 8px 22px 0 rgba(0, 0, 0, 0.25);
+}
+
+.produitxd .big {
+  width: 95%;
+}
+.produitxd .big2 {
+  width: 120%;
+  margin-left: -40px;
+  scale: 0.72;
 }
 
 .produitxd img{
   width: 100%;
   height: 300px;
+  margin-left: -5px;
 }
 
 .produit_name , .produitxd p , .produitxd button , .star{
