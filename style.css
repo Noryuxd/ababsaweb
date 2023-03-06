@@ -249,7 +249,7 @@ body {
     transition: .5s all;
     transform: translateX(0px);
     padding: 1%;
-    height: 420px;
+    height: 400px;
     margin-left: -10px;
 }
 
@@ -894,9 +894,11 @@ body {
 .produitxd .big {
   width: 95%;
 }
+
+
 .produitxd .big2 {
-  width: 120%;
-  margin-left: -40px;
+  width: 100%;
+  margin-left: -20px;
   scale: 0.72;
 }
 
@@ -904,6 +906,12 @@ body {
   width: 100%;
   height: 300px;
   margin-left: -5px;
+}
+
+.p_name {
+  margin-left: 5%;
+  width: 100%;
+  padding-top: 5px;
 }
 
 .produit_name , .produitxd p , .produitxd button , .star{
@@ -954,4 +962,47 @@ body {
   .produitxd {
     width: 250px;
   }
+}
+
+
+
+.all{
+  width: 100%;
+  height: 100vh;
+  background: rgba(255, 255, 255, 0.2); 
+  backdrop-filter: blur(8px); 
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  display: none;
+}
+
+.yup{
+  background-color: #f8f8f8;
+  width: 50%;
+  height: 500px;
+  margin-top: 10%;
+  border-radius: 10px;
+  position: relative;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  display: flex;
+
+}
+
+.all_yup{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.close_div{
+ position: absolute;
+ box-sizing: border-box;
+  top: 0;
+  right: 0;
+  font-size: 31px;
+  padding: 10px;
+  cursor: pointer;
 }

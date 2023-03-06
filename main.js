@@ -90,3 +90,54 @@ $(document).ready(function() {
         });
       }, 5000);
   });
+
+
+  function test_1(){
+    let a = document.getElementById('all_1')
+    a.style.display = 'block'
+  }
+  
+  function test_1_close(){
+    let a = document.getElementById('all_1')
+    a.style.display = 'none'
+  }
+  
+  function test_2(){
+    let a = document.getElementById('all_2')
+    a.style.display = 'block'
+  }
+  
+  function test_2_close(){
+    let a = document.getElementById('all_2')
+    a.style.display = 'none'
+  }
+  
+  function test_3(){
+    let a = document.getElementById('all_3')
+    a.style.display = 'block'
+  }
+  
+  function test_3_close(){
+    let a = document.getElementById('all_3')
+    a.style.display = 'none'
+  }
+  
+  function test_4(){
+    let a = document.getElementById('all_4')
+    a.style.display = 'block'
+  }
+  
+  function test_4_close(){
+    let a = document.getElementById('all_4')
+    a.style.display = 'none'
+  }
+  
+  function test_5(){
+    let a = document.getElementById('all_5')
+    a.style.display = 'block'
+  }
+  
+  function test_5_close(){
+    let a = document.getElementById('all_5')
+    a.style.display = 'none'
+  }
