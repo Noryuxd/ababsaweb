@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Checkout</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  <script src="jquery-3.6.3.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
+</head>
+<body>
+  <section style="position: fixed;width: 100%;z-index: 2;">
+    <ul class="header">
+        <li class="navpar">
+            <div class="navdar">
+                <a href="index.html" class="animate__animated animate__fadeInDown">Home</a>
+                <a href="products.html" class="animate__animated animate__fadeInDown">Products</a>
+                <a href="about.html" class="animate__animated animate__fadeInDown">About</a>
+                <a href="contact.html" class="animate__animated animate__fadeInDown">Contact</a>
+            </div>
+        </li>
+        <li class="logo animate__animated animate__fadeIn">
+            <h1>Techno Store</h1>
+        </li>
+        <li class="perso">
+            <div class="search-container animate__animated animate__fadeInDown">
+                <form action="#">
+                  <input type="text" placeholder="Search Product" name="search">
+                  <button type="submit"><i class="fa fa-search"></i></button>
+                </form>
+            </div>
+        </li>
+        <li class="menu">
+          <span onclick="show_navbar()" class="material-symbols-outlined">
+              menu
+          </span>
+        </li>
+    </ul>
+    </section>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <h1 style="text-align: center;padding-top: 100px;font-size: 60px;font-family: 'Montserrat', sans-serif;" class=" animate__animated animate__fadeIn">Checkout</h1>
+    <div class="containercheck animate__animated animate__fadeInUp">
+      <form action="#">
+        <div class="row">
+          <div class="col-50">
+            <h3>Billing Address</h3>
+            <label for="fname"><i class="fa fa-user"></i> Full Name</label>
+            <input type="text" id="fname" name="firstname" placeholder="Ababsa Rabii" required>
+            <label for="email"><i class="fa fa-envelope"></i> Email</label>
+            <input type="text" id="email" name="email" placeholder="rabii@example.com" required>
+            <label for="adr"><i class="fa fa-address-card-o"></i> Address</label>
+            <input type="text" id="adr" name="address" placeholder="Maarif" required>
+            <label for="city"><i class="fa fa-institution"></i> City</label>
+            <input type="text" id="city" name="city" placeholder="Casablanca" required>
+
+            <div class="row">
+              <div class="col-50">
+                <label for="state">Country</label>
+                <input type="text" id="state" name="state" placeholder="Morocco" required>
+              </div>
+              <div class="col-50">
+                <label for="zip">Zip</label>
+                <input type="text" id="zip" name="zip" placeholder="10001" required>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-50">
+            <h3>Payment</h3>
+            <label for="fname">Accepted Cards</label>
+            <div class="icon-container">
+              <i class="fa-brands fa-cc-visa" style="color:navy;font-size: 50px;"></i>
+              <i class="fa-brands fa-cc-amex" style="color:blue;font-size: 50px;"></i>
+              <i class="fa-brands fa-cc-mastercard" style="color:red;font-size: 50px;"></i>
+              <i class="fa-brands fa-cc-discover" style="color:orange;font-size: 50px;"></i>
+              <i class="fa fa-brands fa-paypal" style="font-size:50px;color: rgb(29, 29, 126);"></i>
+            </div>
+            <label for="cname">Name on Card</label>
+            <input type="text" id="cname" name="cardname" placeholder="M. Ababsa Rabii" required>
+            <label for="ccnum">Credit card number</label>
+            <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444" required>
+            <label for="expmonth">Exp Month</label>
+            <input type="text" id="expmonth" name="expmonth" placeholder="September" required>
+            <div class="row">
+              <div class="col-50">
+                <label for="expyear">Exp Year</label>
+                <input type="text" id="expyear" name="expyear" placeholder="2030" required>
+              </div>
+              <div class="col-50">
+                <label for="cvv">CVV</label>
+                <input type="text" id="cvv" name="cvv" placeholder="589" required>
+              </div>
+            </div>
+          </div>
+        </div>
+        <p id="payment"></p>
+        <input type="submit" value="Checkout" class="btn">
+      </form>
+    </div>
+  </div>
+
+  <div class="newseltter">
+    <div class="newsletter-section" data-aos="fade-down">
+        <div>
+            <h2>Sign up for our newsletter</h2>
+            <p>Stay up to date on the latest products, news, and promotions</p>
+            <form action="https://formspree.io/f/mwkjbknd" method="POST" class="email_form">
+                <input type="email" name="email" id="email" placeholder="Enter your email address">
+                <button class="newsletter_btn" method="POST">
+                    <span class="material-symbols-outlined">
+                        send
+                    </span>
+                </button>
+            </form>
+        </div>
+    </div>
+</div>
+
+<footer class="footer">
+    <div class="container_foot">
+        <div class="row_foot">
+            <div class="footer-col">
+                <h4>company</h4>
+                <ul>
+                    <li><a href="#">about us</a></li>
+                    <li><a href="#">our services</a></li>
+                    <li><a href="#">privacy policy</a></li>
+                    <li><a href="#">affiliate program</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>get help</h4>
+                <ul>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">shipping</a></li>
+                    <li><a href="#">returns</a></li>
+                    <li><a href="#">order status</a></li>
+                    <li><a href="#">payment options</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>online shop</h4>
+                <ul>
+                    <li><a href="#">watch</a></li>
+                    <li><a href="#">bag</a></li>
+                    <li><a href="#">shoes</a></li>
+                    <li><a href="#">dress</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>follow us</h4>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<div id="navvv" style="background-color: black;color: white;width: 100%;height: 100vh;position: fixed;top: 0;z-index: 99999;display: none;">
+  <span onclick="close_navbar()" class="material-symbols-outlined" style="position: absolute;right: 0;;margin: 10px;font-size: 37px;">
+      close
+  </span>
+  <div style="display: flex;flex-direction: column;width: 100%;align-items: center;justify-content: center;height: 100%; gap: 10px;"> 
+      <a href="index.html" class="navvva animate__animated animate__fadeInDown">Home</a>
+      <a href="products.html" class="navvva animate__animated animate__fadeInDown">Products</a>
+      <a href="about.html" class="navvva animate__animated animate__fadeInDown">About</a>
+      <a href="contact.html" class="navvva animate__animated animate__fadeInDown">Contact</a>
+  </div>
+</div>
+
+    
+    <script src="main.js"></script>
+</body>
+</html>

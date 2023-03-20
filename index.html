@@ -11,6 +11,7 @@
     <script src="jquery-3.6.3.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
 </head>
 <body>
     
@@ -35,7 +36,12 @@
                     </form>
                 </div>
             </li>
-    </ul>
+            <li class="menu">
+                <span onclick="show_navbar()" class="material-symbols-outlined">
+                    menu
+                </span>
+            </li>
+        </ul>
     </section>
     <section id="home">
         <div>
@@ -44,7 +50,7 @@
     </section>
     <section class="main">
         <div class="mac_info">
-            <h1 class=" p1 animate__animated animate__fadeInLeft animate__delay-0.7s" style="font-size: 47px;" >The dark knight rises</h1>
+            <h1 class=" p1 animate__animated animate__fadeInLeft animate__delay-0.7s">The dark knight rises</h1>
             <p class=" p2 animate__animated animate__fadeInRight animate__delay-0.7s" style="font-size: 38px;">The New MacBook Pro</p>
             <p class=" p3 animate__animated animate__fadeInLeft animate__delay-0.7s">Powerful and versatile laptop for productivity and creativity.</p>
             <div style="display: flex;gap: 10px;">
@@ -57,7 +63,7 @@
             
 
     </section>
-    <section style="height: 70vh;" class="bestseller">
+    <section style="height: auto;" class="bestseller">
         <h1 class="bestseler_title" data-aos="fade-down">Best Seller</h1>
         <div class="corsoal">
             <div class="btns">
@@ -144,7 +150,7 @@
             
         </div>
     </div>
-    <div class="star_im">
+    <div class="star_im2">
         <div class="sony" data-aos="fade-right">
             <img src="img/Isolate yourself from the world.jpg" style="width: 100%;height: 100%;border-radius: 10px;">
         </div>
@@ -154,25 +160,25 @@
         </div>
     </div>
     <div class="services">
-        <div style="display: flex;">
+        <div class="services_div"  style="display: flex;">
             <div class="service" data-aos="fade-down">
                 <img src="img/free-delivery.png" style="width: 100px;height: 100px;">
                 <h2>Free Shipping</h2>
-                <p class="">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                <p class="desc">Get FREE delivery on all orders! </p>
             </div>
             <div class="service" data-aos="fade-down">
                 <img src="img/express-delivery.png" style="width: 100px;height: 100px;">
                 <h2>Express Delivery</h2>
-                <p class="">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                <p class="desc">Speed is the future of our business.</p>
             </div>
             <div class="service" data-aos="fade-down">
                 <img src="img/secure-payment.png" style="width: 100px;height: 100px;">
                 <h2>Secure Payment</h2>
-                <p class="">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                <p class="desc">Security is not a product, but a process.</p>
             </div>
         </div>
     </div>
-    <h1 style="text-align: center;font-family: 'Roboto', sans-serif;font-size: 35px;margin-bottom: 20px;" data-aos="fade-up">CUSTOMER REVIEWS</h1>
+    <h1 style="text-align: center;font-family: 'Montserrat', sans-serif;font-weight: bold;font-size: 35px;margin-bottom: 40px;" data-aos="fade-up">CUSTOMER REVIEWS</h1>
     <div class="customer_reviews">
         <div class="reviews" data-aos="fade-right">
             <div class="review">
@@ -183,69 +189,119 @@
                         <span class="fa fa-star checked"></span>
                         <span class="fa fa-star checked"></span>
                         <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star checked"></span>
                         <span class="fa fa-star"></span>
                     </div>
                 </div>
             </div>
-            <p style="line-height: 20px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro reprehenderit deleniti ut ipsum iure molestias impedit.</p>
+            <p style="line-height: 20px;">The products on this store are just magnificent, the quality is highly remarquable and well worth shopping. <br>
+            I highly recommend!</p>
         </div>
         <div class="reviews" data-aos="fade-up">
             <div class="review">
                 <img src="img/34a09eba-6db5-494e-b0c9-94779a6828a0.jpg" style="width: 100px;height: 100px;border-radius: 100%;">
                 <div>
-                    <h2>Hamid Test</h2>
+                    <h2>Ahmed Bachir</h2>
                     <div class="star">
                         <span class="fa fa-star checked"></span>
                         <span class="fa fa-star checked"></span>
                         <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star checked"></span>
                         <span class="fa fa-star"></span>
                     </div>
                 </div>
             </div>
-            <p style="line-height: 20px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro reprehenderit deleniti ut ipsum iure molestias impedit.</p>
+            <p style="line-height: 20px;">I recently made a purchase from your online store and I just wanted to say how impressed I was with the entire experience. <br> Everything was top-notch.</p>
         </div>
         <div class="reviews" data-aos="fade-left">
             <div class="review">
                 <img src="img/Photographe_profesionnel_portrait_studio_corporate.jpg" style="width: 100px;height: 100px;border-radius: 100%;object-fit: cover;">
                 <div>
-                    <h2>Bachir Ahmed</h2>
+                    <h2>Meryem Inpici</h2>
                     <div class="star">
                         <span class="fa fa-star checked"></span>
                         <span class="fa fa-star checked"></span>
                         <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star"></span>
-                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
                     </div>
                 </div>
             </div>
-            <p style="line-height: 20px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro reprehenderit deleniti ut ipsum iure molestias impedit.</p>
+            <p style="line-height: 20px;">Thank you for the fast shipping, great products and the amazing customer service. <br> I'll definitely be back!</p>
         </div>
     </div>
 
-    <div class="newsletter-section" data-aos="fade-down">
-        <h2>Sign up for our newsletter</h2>
-        <p>Stay up to date on the latest products, news, and promotions</p>
-        <form action="#" method="#">
-          <label for="email">Enter your email address:</label>
-          <input type="email" id="email" name="email" required>
-          <button type="submit" <i class="fa fa-long-arrow-right" aria-hidden="true"></i></button>
-        </form>
+    <div class="newseltter">
+        <div class="newsletter-section" data-aos="fade-down">
+            <div>
+                <h2>Sign up for our newsletter</h2>
+                <p>Stay up to date on the latest products, news, and promotions</p>
+                <form action="https://formspree.io/f/mwkjbknd" method="POST" class="email_form">
+                    <input type="email" name="email" id="email" placeholder="Enter your email address">
+                    <button class="newsletter_btn" method="POST">
+                        <span class="material-symbols-outlined">
+                            send
+                        </span>
+                    </button>
+                </form>
+            </div>
+        </div>
     </div>
     
-      <footer data-aos="fade-up">
-        <div class="footer-container">
-          <div class="social-icons">
-            <a href="#"><i class="last fa fa-facebook-f"></i></a>
-            <a href="#"><i class="last fa fa-twitter"></i></a>
-            <a href="#"><i class="last fa fa-instagram"></i></a>
-            <a href="#"><i class="last fa fa-youtube"></i></a>
-            <a href="#"><i class="last fa fa-linkedin"></i></a>
-          </div>
-          <p>&copy; 2023 Techno Store. All rights reserved.</p>
+    <footer class="footer">
+        <div class="container_foot">
+            <div class="row_foot">
+                <div class="footer-col">
+                    <h4>company</h4>
+                    <ul>
+                        <li><a href="#">about us</a></li>
+                        <li><a href="#">our services</a></li>
+                        <li><a href="#">privacy policy</a></li>
+                        <li><a href="#">affiliate program</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>get help</h4>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">shipping</a></li>
+                        <li><a href="#">returns</a></li>
+                        <li><a href="#">order status</a></li>
+                        <li><a href="#">payment options</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>online shop</h4>
+                    <ul>
+                        <li><a href="#">watch</a></li>
+                        <li><a href="#">bag</a></li>
+                        <li><a href="#">shoes</a></li>
+                        <li><a href="#">dress</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>follow us</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
         </div>
-      </footer>
+   </footer>
+   <div id="navvv" style="background-color: black;color: white;width: 100%;height: 100vh;position: fixed;top: 0;z-index: 99999;display: none;">
+        <span onclick="close_navbar()" class="material-symbols-outlined" style="position: absolute;right: 0;;margin: 10px;font-size: 37px;">
+            close
+        </span>
+        <div style="display: flex;flex-direction: column;width: 100%;align-items: center;justify-content: center;height: 100%; gap: 10px;"> 
+            <a href="index.html" class="navvva animate__animated animate__fadeInDown">Home</a>
+            <a href="products.html" class="navvva animate__animated animate__fadeInDown">Products</a>
+            <a href="about.html" class="navvva animate__animated animate__fadeInDown">About</a>
+            <a href="contact.html" class="navvva animate__animated animate__fadeInDown">Contact</a>
+        </div>
+   </div>
       
 
     <script src="main.js"></script>

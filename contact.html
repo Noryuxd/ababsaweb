@@ -12,6 +12,7 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
 </head>
 <body>
     <section style="position: fixed;width: 100%;z-index: 2;">
@@ -35,6 +36,11 @@
                     </form>
                 </div>
             </li>
+            <li class="menu">
+                <span onclick="show_navbar()" class="material-symbols-outlined">
+                    menu
+                </span>
+            </li>
         </ul>
     </section>
     <section id="home">
@@ -49,15 +55,15 @@
     <div class="flextest animate__animated animate__fadeIn">
         <div class="divflex1" data-aos="fade-right">
             <h2 style="margin-bottom: 20px;"><img src="img/pin.png" alt="" width="100px"></h2>
-            <b>Address :</b> <br> <span style="color:grey;">Av. Mehdi Ben Barka, Casablanca 20250</span>
+            <b style="font-family: 'Raleway', sans-serif;">Address :</b> <br> <span style="color:grey;font-family: 'Golos Text', sans-serif;">Av. Mehdi Ben Barka, Casablanca 20250</span>
         </div>
         <div class="divflex1" data-aos="fade-down">
             <h2 style="margin-bottom: 20px;"><img src="img/phone.png" alt="" width="100px"></h2>
-            <b>Phone :</b> <br> <span style="color:grey;">058723945453</span>
+            <b style="font-family: 'Raleway', sans-serif;">Phone :</b> <br> <span style="color:grey;font-family: 'Golos Text', sans-serif;">058723945453</span>
         </div>
         <div class="divflex1" data-aos="fade-left">
             <h2 style="margin-bottom: 20px;"><img src="img/telegram.png" alt="" width="100px"></h2>
-            <b>E-mail :</b><span style="color:grey;"> technostore@gmail.com</span>
+            <b style="font-family: 'Raleway', sans-serif;">E-mail : <br></b><span style="color:grey;"> technostore@gmail.com</span>
         </div>
     </div>
         <div class="containerx animate__animated animate__fadeIn">
@@ -66,42 +72,93 @@
                 <a href="https://www.google.com/maps"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3323.0417210538826!2d-7.646705566505179!3d33.60422194491984!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xda7d2f843221ee9%3A0x7b6ae23e4ad15610!2sInstitut%20de%20Technologie%20Appliqu%C3%A9e%20El%20Hank!5e0!3m2!1sfr!2sma!4v1677611548455!5m2!1sfr!2sma" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></a>
               </div>
               <div class="column" data-aos="fade-left">
-                <form>
-                  <label for="fname">First Name</label>
+                <form action="https://formspree.io/f/xjvdrzdq"
+                method="POST">
+                  <label for="fname" class="raleway">First Name</label>
                   <input type="text" id="fname" name="firstname" placeholder="Your name.." required>
-                  <label for="lname">Last Name</label>
+                  <label for="lname" class="raleway">Last Name</label>
                   <input type="text" id="lname" name="lastname" placeholder="Your last name.." required>
-                  <label for="fphone">Phone</label>
+                  <label for="fphone" class="raleway">Phone</label>
                   <input type="text" id="lphone" placeholder="Your Phone Number..." required>
-                  <label for="subject">Subject</label>
-                  <textarea id="subject" name="subject" placeholder="Your message" style="height:170px"></textarea>
+                  <label for="subject" class="raleway">Subject</label>
+                  <textarea id="subject" name="subject"  style="height:170px"></textarea>
                   <button class="download2">Submit</button>
                 </form>
               </div>
             </div>
           </div>
-          <div class="newsletter-section" data-aos="fade-down">
-            <h2>Sign up for our newsletter</h2>
-            <p>Stay up to date on the latest products, news, and promotions</p>
-            <form action="#" method="#">
-              <label for="email">Enter your email address:</label>
-              <input type="email" id="email" name="email" required>
-              <button type="submit" <i class="fa fa-long-arrow-right" aria-hidden="true"></i></button>
-            </form>
-          </div>
-    
-        <footer data-aos="fade-up">
-            <div class="footer-container">
-                <div class="social-icons">
-                    <a href="#"><i class="last fa fa-facebook-f"></i></a>
-                    <a href="#"><i class="last fa fa-twitter"></i></a>
-                    <a href="#"><i class="last fa fa-instagram"></i></a>
-                    <a href="#"><i class="last fa fa-youtube"></i></a>
-                    <a href="#"><i class="last fa fa-linkedin"></i></a>
+          <div class="newseltter">
+            <div class="newsletter-section" data-aos="fade-down">
+                <div>
+                    <h2>Sign up for our newsletter</h2>
+                    <p>Stay up to date on the latest products, news, and promotions</p>
+                    <form action="https://formspree.io/f/mwkjbknd" method="POST" class="email_form">
+                        <input type="email" name="email" id="email" placeholder="Enter your email address">
+                        <button class="newsletter_btn" method="POST">
+                            <span class="material-symbols-outlined">
+                                send
+                            </span>
+                        </button>
+                    </form>
                 </div>
-                <p>&copy; 2023 Techno Store. All rights reserved.</p>
             </div>
-        </footer>
+        </div>
+        
+        <footer class="footer">
+            <div class="container_foot">
+                <div class="row_foot">
+                    <div class="footer-col">
+                        <h4>company</h4>
+                        <ul>
+                            <li><a href="#">about us</a></li>
+                            <li><a href="#">our services</a></li>
+                            <li><a href="#">privacy policy</a></li>
+                            <li><a href="#">affiliate program</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>get help</h4>
+                        <ul>
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">shipping</a></li>
+                            <li><a href="#">returns</a></li>
+                            <li><a href="#">order status</a></li>
+                            <li><a href="#">payment options</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>online shop</h4>
+                        <ul>
+                            <li><a href="#">watch</a></li>
+                            <li><a href="#">bag</a></li>
+                            <li><a href="#">shoes</a></li>
+                            <li><a href="#">dress</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>follow us</h4>
+                        <div class="social-links">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+       </footer>
+    
+        <div id="navvv" style="background-color: black;color: white;width: 100%;height: 100vh;position: fixed;top: 0;z-index: 99999;display: none;">
+            <span onclick="close_navbar()" class="material-symbols-outlined" style="position: absolute;right: 0;;margin: 10px;font-size: 37px;">
+                close
+            </span>
+            <div style="display: flex;flex-direction: column;width: 100%;align-items: center;justify-content: center;height: 100%; gap: 10px;"> 
+                <a href="index.html" class="navvva animate__animated animate__fadeInDown">Home</a>
+                <a href="products.html" class="navvva animate__animated animate__fadeInDown">Products</a>
+                <a href="about.html" class="navvva animate__animated animate__fadeInDown">About</a>
+                <a href="contact.html" class="navvva animate__animated animate__fadeInDown">Contact</a>
+            </div>
+        </div>
         <script src="main.js"></script>
 </body>
 </html>
