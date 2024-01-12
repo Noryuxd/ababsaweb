@@ -41,4 +41,4 @@ cd technostore
 
 ## Authors
 - [Ababsa Rabii](https://github.com/Noryuxd)
-- [Ahmed El Mahmoudi Bachir](https://github.com/AhmedBachirElMahmoudi)
+- [Ahmed Bachir El Mahmoudi](https://github.com/AhmedBachirElMahmoudi)
